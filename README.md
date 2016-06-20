@@ -2,6 +2,5 @@
 This is a userscript for removing reddit affiliate links
 
 
-Reddit has decided to put Affiliate links when clicking specific links this is fine but they do not honor the setting for disabling the affiliate links.
-
+Reddit does not honor the setting for not allowing affiliate links, This forces the links to be correct when clicking them.
 

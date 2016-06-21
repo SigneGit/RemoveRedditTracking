@@ -2,7 +2,7 @@
 // @name         Remove affiliate links from Reddit
 // @author       /u/Signe_
 // @match        https://*.reddit.com/r/*/comments/*/*
-// @match        https://*.reddit.com/u/*
+// @match        https://*.reddit.com/u*/*
 // @grant        none
 // ==/UserScript==
 

@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         Remove affiliate links from Reddit
 // @author       /u/Signe_
+// @match        https://*.reddit.com/*
 // @match        https://*.reddit.com/r/*/comments/*/*
 // @match        https://*.reddit.com/u/*
 // @match        https://*.reddit.com/user/*

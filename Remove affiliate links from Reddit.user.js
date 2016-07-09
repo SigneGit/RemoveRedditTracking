@@ -16,6 +16,15 @@ for(var i=0;i<links.length;i++)
         links[i].style.color = "#00FF00";
         //console.log(links[i]);
     }
+    
+    if(links[i].hasAttribute("data-outbound-url"))
+    {
+        links[i].setAttribute("data-outbound-url",links[i].href);
+        links[i].style.color = "#00FF00";
+        //console.log(links[i]);
+    }
+    
+    
 }
 
 

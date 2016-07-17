@@ -10,14 +10,20 @@
 
 Affiliate()
 
+var _ResTest = setInterval(Detect_Res,1000)
+var _AffiliateTimer;
+var _Counter = 0;
 
-
-if ($(".neverEndingReddit")[0]){
-    setInterval(Affiliate,5000)
-    console.log("Set Timer")
+function Detect_Res() {
+    if ($(".neverEndingReddit")[0]){
+        clearInterval(_ResTest);
+        _AffiliateTimer = setInterval(Affiliate,5000);
+    }
+    _Counter++;
+    if(_Counter >= 5){ 
+        clearInterval(_ResTest);
+    }
 }
-
-
 
 function Affiliate() {
 var links = document.links;

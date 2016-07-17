@@ -8,6 +8,18 @@
 // @grant        none
 // ==/UserScript==
 
+Affiliate()
+
+
+
+if ($(".neverEndingReddit")[0]){
+    setInterval(Affiliate,5000)
+    console.log("Set Timer")
+}
+
+
+
+function Affiliate() {
 var links = document.links;
 for(var i=0;i<links.length;i++)
 {
@@ -24,8 +36,5 @@ for(var i=0;i<links.length;i++)
         links[i].style.color = "#00FF00";
         //console.log(links[i]);
     }
-    
-    
 }
-
-
+}

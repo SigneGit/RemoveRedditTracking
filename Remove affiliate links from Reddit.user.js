@@ -8,6 +8,24 @@
 // @grant        none
 // ==/UserScript==
 
+Affiliate()
+
+var _ResTest = setInterval(Detect_Res,1000)
+var _AffiliateTimer;
+var _Counter = 0;
+
+function Detect_Res() {
+    if ($(".neverEndingReddit")[0]){
+        clearInterval(_ResTest);
+        _AffiliateTimer = setInterval(Affiliate,5000);
+    }
+    _Counter++;
+    if(_Counter >= 5){ 
+        clearInterval(_ResTest);
+    }
+}
+
+function Affiliate() {
 var links = document.links;
 for(var i=0;i<links.length;i++)
 {
@@ -24,8 +42,5 @@ for(var i=0;i<links.length;i++)
         links[i].style.color = "#00FF00";
         //console.log(links[i]);
     }
-    
-    
 }
-
-
+}

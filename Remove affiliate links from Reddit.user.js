@@ -17,7 +17,7 @@ var _Counter = 0;
 function Detect_Res() {
     if ($(".neverEndingReddit")[0]){
         clearInterval(_ResTest);
-        _AffiliateTimer = setInterval(Affiliate,5000);
+        _AffiliateTimer = setInterval(Affiliate,1000);
     }
     _Counter++;
     if(_Counter >= 5){ 

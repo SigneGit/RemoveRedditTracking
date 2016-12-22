@@ -11,7 +11,7 @@ Affiliate()
 var _ResTest = setInterval(Detect_Res,1000)
 var _AffiliateTimer;
 var _Counter = 0;
-
+var ChangeColorOnEdit = false;
 function Detect_Res() {
     if ($(".neverEndingReddit")[0]){
         clearInterval(_ResTest);
@@ -31,7 +31,8 @@ function Affiliate() {
     {
       //links[i].setAttribute('data-affiliate-url', links[i].href);
       links[i].removeAttribute('data-affiliate-url');
-      links[i].style.color = '#00FF00';
+      if(ChangeColorOnEdit)
+          links[i].style.color = '#00FF00';
       //console.log(links[i]);
     }
     if (links[i].hasAttribute('data-outbound-url'))
@@ -39,13 +40,15 @@ function Affiliate() {
       //links[i].setAttribute('data-outbound-url', links[i].href);
       links[i].removeAttribute('data-outbound-url');
       links[i].removeAttribute('data-outbound-expiration');
-      links[i].style.color = '#00FF00';
+      if(ChangeColorOnEdit)
+        links[i].style.color = '#00FF00';
       //console.log(links[i]);
     }
     if(links[i].hasAttribute('data-inbound-url'))
     {
         links[i].removeAttribute('data-inbound-url');
-        links[i].style.color = '#00FF00';
+        if(ChangeColorOnEdit)
+            links[i].style.color = '#00FF00';
     }
   }
 }

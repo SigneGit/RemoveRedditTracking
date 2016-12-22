@@ -30,19 +30,22 @@ function Affiliate() {
     if (links[i].hasAttribute('data-affiliate-url'))
     {
       //links[i].setAttribute('data-affiliate-url', links[i].href);
-      links[i].removeAttribute('data-affiliate-url')
-      links[i].removeAttribute('data-href-url')
+      links[i].removeAttribute('data-affiliate-url');
       links[i].style.color = '#00FF00';
       //console.log(links[i]);
     }
     if (links[i].hasAttribute('data-outbound-url'))
     {
       //links[i].setAttribute('data-outbound-url', links[i].href);
-      links[i].removeAttribute('data-outbound-url')
-      links[i].removeAttribute('data-outbound-expiration')
-      links[i].removeAttribute('data-href-url')
+      links[i].removeAttribute('data-outbound-url');
+      links[i].removeAttribute('data-outbound-expiration');
       links[i].style.color = '#00FF00';
       //console.log(links[i]);
+    }
+    if(links[i].hasAttribute('data-inbound-url'))
+    {
+        links[i].removeAttribute('data-inbound-url');
+        links[i].style.color = '#00FF00';
     }
   }
 }

@@ -8,6 +8,7 @@ Also removes reddits outbound url redirection to out.reddit.com and replaces it 
 
 
 OPTIONAL:
+
 Change ChangeColorOnEdit to true for this
 
 When ever a link is replaced with this script the link is changed to the color Green (#00FF00)

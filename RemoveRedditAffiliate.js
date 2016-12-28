@@ -7,10 +7,16 @@
 // @match        https://*.reddit.com/user/*
 // @grant        none
 // ==/UserScript==
+
+//user settings (only modify ChangeColorOnEdit to true)
+
+var ChangeColorOnEdit = false;
+
+//end user settings
+
 var CheckRes = setInterval(Detect_Res, 1000);
 var RemoveAffiliateTimer;
 var tCounter = 0;
-var ChangeColorOnEdit = false;
 var bSetTrending = false;
 var bFrontPage = false;
 function Detect_Res() { //Detects if res never ending reddit is enabled if not clear timer, if so set timer for RemoveAffiliate

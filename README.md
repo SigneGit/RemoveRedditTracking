@@ -2,7 +2,7 @@
 This is a userscript for removing reddit affiliate links
 
 
-This forces affiliate links to be the actual link you expect them to be.
+This forces links to remove the tracking that reddit places inside them
 
 * Removes reddits outbound url tracker
 * Removes reddits inbound url tracker

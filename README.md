@@ -1,5 +1,5 @@
 # RemoveRedditTracking
-This is a userscript for removing reddit affiliate links
+This is a userscript for removing reddit tracking links
 
 
 This forces links to remove the tracking that reddit places inside them

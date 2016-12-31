@@ -123,5 +123,8 @@ var DelayCheck = function () { //This is a function to delay a Affiliate check (
       DelayCheckTimeOut++;
       setTimeout(DelayCheck, 1000); //Call to itself every 1 second
     }
+    else{
+      DelayCheckTimeOut = 0; //resets the timer
+    }
   }
 }

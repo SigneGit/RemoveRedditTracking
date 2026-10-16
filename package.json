@@ -1,0 +1,9 @@
+{
+  "name": "remove-reddit-tracking",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage --test-coverage-include=RemoveRedditTracking.js"
+  },
+  "engines": { "node": ">=22" }
+}
